@@ -9,9 +9,7 @@ a 22 year old junior who is a student teacher
 a 20 year old sophomore on disciplinary probation
 Explain why your program is either fair or not fair. In particular, describe which students are most likely to benefit from your algorithm and which are likely to be left out.
 
-
-
-
+//Are you engaged in a full-time Off-Campus Program (such as student teaching)?
 Full-Time, Off-Campus Program Credit (e.g. student teaching): 1 point
 Academic Probation: -1 point
 Possible Academic Suspension: -2 points

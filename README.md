@@ -3,19 +3,16 @@
 
 Your repo must have a README.md file in which you:
 Summarize your scoring system
-Provide sample output for three test cases:
+Sample output for three test cases:
 a 25 year old senior on academic probation
 a 22 year old junior who is a student teacher
 a 20 year old sophomore on disciplinary probation
 Explain why your program is either fair or not fair. In particular, describe which students are most likely to benefit from your algorithm and which are likely to be left out.
 
-Academic Probation: -1 point
-Possible Academic Suspension: -2 points
-On Disciplinary Probation at Any Point during the Academic Year: -3 points
 A student's priority is the sum of the points that can be assigned to them. So a junior (3 points) who is 23 years old (1 point) would have priority over a senior (4 points) who is on academic probation (-1 point).
 
 To reduce the utter triviality of this assignment, we introduce some additional requirements:
-You must have at least one question that only appears if a previous question is answered a particular way (for example, a question that is only applicable to seniors).
+
 
 You must have at least one point award in your scheme that is calculated, rather than determined directly by the answer (for example, you might assign points based on age by computing points = max(0, (age - 18) / 2)).
 

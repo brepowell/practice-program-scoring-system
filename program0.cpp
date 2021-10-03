@@ -18,7 +18,6 @@ int main()
 //Current Senior: 4 points
     int points = 0; 
     cout << "Are you a Freshman, Sophomore, Junior, or Senior?" << endl;
-
     cout << "Enter 1 for Freshman; 2 for Sophomore; 3 for Junior; 4 for Senior" << endl;
     cin >> points; // Get user input from the keyboard
     
@@ -30,6 +29,15 @@ int main()
         // if the student is older than 23 years, add 1 point
         points++;
     }
+
+//Question 3: Are you engaged in a Full-Time, Off-Campus Program (such as student teaching)?
+    int credits = 0;
+    cout << "Are you engaged in a Full-Time, Off-Campus Program?" << endl;
+    cout << "Enter 1 for yes; 0 for no" << endl;
+    cin >> credits;
+
+//Add the credits to the total points:
+    points += credits;
 
 //Test:
     cout << "You have " << points <<" housing points" << endl; // Display the points

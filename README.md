@@ -10,10 +10,7 @@ a 20 year old sophomore on disciplinary probation
 Explain why your program is either fair or not fair. In particular, describe which students are most likely to benefit from your algorithm and which are likely to be left out.
 
 
-//Point system for university housing lottery.
-//This program will ask students a series of questions and assign points based on the responses.
-//The points assigned will determine what order students will be allowed to select housing.
-//Those with the most points get the first choice of housing.
+
 
 Full-Time, Off-Campus Program Credit (e.g. student teaching): 1 point
 Academic Probation: -1 point
@@ -24,11 +21,7 @@ A student's priority is the sum of the points that can be assigned to them. So a
 Create a program that assigns points to students in order to prioritize them in housing selection. You program will prompt a user via cout and read user input via cin. Its overall function will be:
 
 
-//What is your age in years?
-23+ Years of Age: 1 point
-
-Assign points based on their answers.
-Accumulate their total points across all answers and output the result (like "You have 23 housing points").
+Accumulate their total points across all answers and output the result (like "").
 You may implement a scheme similar to the example scheme above (subject to the contraints below) or a scheme of your devising.
 
 To reduce the utter triviality of this assignment, we introduce some additional requirements:

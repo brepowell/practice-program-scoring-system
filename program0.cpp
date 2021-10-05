@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 //Breanna Powell
 //SID: 0641962
@@ -10,17 +11,27 @@ using namespace std;
 
 int main()
 {
+//Variables:
+   int points = 0; 
+   int age = 0; 
+   int credits = 0;
+   int demerits = 0;
+   string answer = "";
 
-//Question 1: Are you a Freshman, Sophomore, Junior, or Senior?
+//Question 1: What is your age in years?
+   cout << "What is your age in years?" << endl;
+   cin >> age; // Get user input from the keyboard
+   cout << "You entered " << age << endl; // Display age
+
+//Question 2: Are you a Freshman, Sophomore, Junior, or Senior?
 //Current Freshman: 4 point
 //Current Sophomore: 3 points
 //Current Junior: 2 points
 //Current Senior: 1 points
-   int points = 0; 
    cout << "Are you a Freshman, Sophomore, Junior, or Senior?" << endl;
    cout << "Enter 1 for Freshman; 2 for Sophomore; 3 for Junior; 4 for Senior" << endl;
    cin >> points; // Get user input from the keyboard
-   string answer = "";
+
    switch(points){
        case 1: 
           answer = "Freshman";
@@ -37,29 +48,23 @@ int main()
    }
    cout << "You entered " << answer << endl; // Display answer
    points = 5-points; // enable Freshman students to get more points than Seniors
-    
-//Question 2: What is your age in years?
-   int age = 0; 
-   cout << "What is your age in years?" << endl;
-   cin >> age; // Get user input from the keyboard
-   cout << "You entered " << age << endl; // Display age
+   
+   // if the student is younger than 23 years, add 1 point
    if (age <= 23) {
-      points++; // if the student is younger than 23 years, add 1 point
+      points++; 
    }
 
 //Question 3: Are you engaged in a Full-Time, Off-Campus Program (such as student teaching)?
-   int credits = 0;
    cout << "Are you engaged in a Full-Time, Off-Campus Program?" << endl;
    cout << "Enter Yes or No" << endl;
-   cout << "You entered " << answer << endl; // Display answer
    cin >> answer;
+   cout << "You entered " << answer << endl; // Display answer
    answer == "Yes" || answer == "yes" ? credits++ : credits;
 
 //Question 4: Are you you on Academic Probation, Possible Academic Suspension, or Disciplinary Probation?
 //Academic Probation: -1 point
 //Possible Academic Suspension: -2 points
 //On Disciplinary Probation at Any Point during the Academic Year: -3 points
-   int demerits = 0;
    cout << "Are you you on Academic Probation, Possible Academic Suspension, or Disciplinary Probation?" << endl;
    cout << "Enter Yes or No" << endl;
    cin >> answer; // Get user input from the keyboard
@@ -67,9 +72,9 @@ int main()
    
    //Question that appears if a prior question is answered a certain way:
    if (answer == "Yes" || answer =="yes"){
-       cout << "Enter 1 if you are on Academic Probation" << answer <<endl;
-       cout << "Enter 2 if you are on Possible Academic Suspension" << answer <<endl;
-       cout << "Enter 3 if you are on Disciplinary Probation" << answer <<endl;
+       cout << "Enter 1 if you are on Academic Probation" <<endl;
+       cout << "Enter 2 if you are on Possible Academic Suspension" <<endl;
+       cout << "Enter 3 if you are on Disciplinary Probation" <<endl;
        cin >> demerits;
    }
 
@@ -79,11 +84,11 @@ int main()
    cin >> answer; // Get user input from the keyboard
    cout << "You entered " << answer << endl; // Display answer
    if (answer == "Yes" || answer =="yes"){
-      credits += points/2; //Credits for this are calculated by taking the points for age
+      credits += (age - 18) / 2; //Credits for this are calculated
    }
 
 //Question 6: Are you a veteran?
-   cout << "Do you qualify for accomodations through Disability Resources for Students (DRS)?" << endl;
+   cout << "Are you a veteran?" << endl;
    cout << "Enter Yes or No" << endl;
    cin >> answer; // Get user input from the keyboard
    cout << "You entered " << answer << endl; // Display answer
@@ -93,6 +98,6 @@ int main()
    points += credits - demerits;
 
 //Test:
-   cout << "You have " << points <<" housing points" << endl; // Display the points
+   cout << "You have " << points <<" housing point(s)" << endl; // Display the points
 
 }

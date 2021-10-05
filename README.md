@@ -4,17 +4,19 @@
 //SID: 0641962
 
 Summarize your scoring system:
-For my scoring system, I would like to favor students who are younger, may not have an income, are veterans, or have high needs. My goal was to try and make the program fair for the students who use it. Students who are under disciplinary action are likely to be left out, while students who have high needs or less income are more likely to benefit from the algorithm.
+For my scoring system, I would like to favor students who are younger (because they are less likely to have a source of income), are veterans, or have high needs. My goal was to try and make the program fair for the students who use it. Students who are under disciplinary action are likely to be left out, while students who have high needs or work student teaching are more likely to benefit from the algorithm.
 
-Higher points are given to students who are younger, have a lower class year, are veterans, or qualify for accomodations through Disability Resources for Students (DRS).
+Higher points are given to students who are younger, have a lower class year, are student teaching, are veterans, or qualify for accomodations through Disability Resources for Students (DRS).
 
 For the part of the award scheme that is calculated, I chose to make it so that even if a student is older they can benefit from the algorithm if they have high needs or if they are a veteran.
 
-Sample output for three test cases:
-a 25 year old senior on academic probation
-a 22 year old junior who is a student teacher
-a 20 year old sophomore on disciplinary probation
-Explain why your program is either fair or not fair. In particular, describe which students are most likely to benefit from your algorithm and which are likely to be left out.
+Sample output for test cases:
+a 25 year old (0pts) senior (1pt) on academic probation (-1pt) = 0 housing point(s)
+a 22 year old (1pt) junior (2pts) who is a student teacher (1pt) = 4 housing point(s)
+a 20 year old (1pt) sophomore (3pts) on disciplinary probation (-3pts)= 1 housing point(s)
+a 28 year old (0pts) senior (1pt) who has high needs (28-18 = 10/2 = 5 points) = 6 housing point(s)
+a 20 year old (1pt) freshman (4pts) who is a veteran (1pt) = 6 housing point(s)
 
-A student's priority is the sum of the points that can be assigned to them. So a junior (3 points) who is 23 years old (1 point) would have priority over a senior (4 points) who is on academic probation (-1 point).
-
+A 22 year old junior who is a student teacher has priority over a 20 year old sophomore on disciplinary probation.
+A 20 year old sophomore who is on disciplinary probation has more priority over a 25 year old senior on academic probation.
+A 20 year old freshman who is a veteran has the same priority as a 28 year old senior wh o has high needs.

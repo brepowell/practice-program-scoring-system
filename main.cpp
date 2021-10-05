@@ -1,8 +1,8 @@
+//Breanna Powell
+//SID: 0641962
 #include <iostream>
 #include <string>
 using namespace std;
-//Breanna Powell
-//SID: 0641962
 
 //Point system for university housing lottery.
 //This program will ask students a series of questions and assign points based on the responses.
@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+   
 //Variables:
    int points = 0; 
    int age = 0; 
